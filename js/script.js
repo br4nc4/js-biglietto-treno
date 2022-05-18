@@ -1,14 +1,15 @@
 "use strict"
-//Con i primi due comandi chiediamo l'età del passeggero
+
+//Con i primi due comandi o variabili chiediamo l'età del passeggero
 const età = prompt(`Quanti anni hai?`);
-const distanza = prompt(`Quanti kilometri percorrerai?`);
+const distanzaTot = prompt(`Quanti kilometri percorrerai?`);
 
 //il prezzo del biglietto è di 0.21€ al Km. 
 const prezzoKm = 0.21;
 
 //Per calcolare il prezzo del biglietto si moltiplica
 //il prezzo al Km per il totale dei Km percorsi.
-let prezzoTot = prezzoKm * distanza;
+let prezzoTot = prezzoKm * distanzaTot;
 
 //età limite 18
 const firstAge = 18;
@@ -20,6 +21,9 @@ const secondAge = 65;
 //e moltiplicando per 20 
 const sconto1 = ((prezzoTot / 100) * 20); 
 
+//sconto del 40%
+const sconto2 = ((prezzoTot / 100) * 40);
+
 /* console.log(prezzoTot); // inserito momentaneamente */
 
 //la prima condizione è:
@@ -27,14 +31,18 @@ const sconto1 = ((prezzoTot / 100) * 20);
 if (età < firstAge){
     prezzoTot = prezzoTot - sconto1;
     console.log(`Hai un età inferiore a ${firstAge} anni ti è stato applicato uno sconto del 20% al prezzo totale`)
-    console.log(`il prezzo totale è di${prezzoTot}€`)
+    console.log(`Il prezzo totale è di${prezzoTot}€`)
 }
 else if (età >= firstAge && età <= secondAge){
-    prezzoTot = prezzoKm * distanza;
+    prezzoTot = prezzoKm * distanzaTot;
     console.log(`Il prezzo totale è di ${prezzoTot}€`)
 } 
 
 //la seconda condizione è:
 //il passeggero che ha PIù di 65 anni ha uno sconto sul prezzo totale del 40%.
-if ()
+if (età > secondAge){
+    prezzoTot = prezzoTot - sconto2;
+    console.log(`Hai un età maggiore di ${secondAge}anni ti è stato applicato uno sconto del 40% al prezzo totale`)
+    console-log(`Il prezzo totale è di ${prezzoTot}€`)
+}
 
