@@ -43,6 +43,6 @@ else if (età >= firstAge && età <= secondAge){
 if (età > secondAge){
     prezzoTot = prezzoTot - sconto2;
     console.log(`Hai un età maggiore di ${secondAge}anni ti è stato applicato uno sconto del 40% al prezzo totale`)
-    console-log(`Il prezzo totale è di ${prezzoTot}€`)
+    console.log(`Il prezzo totale è di ${prezzoTot}€`)
 }
 
