@@ -50,5 +50,5 @@ if (età > secondAge){
 
 document.getElementById(`user-age`).innerHTML = età;
 document.getElementById(`kmt-dist`).innerHTML = distanzaTot;
-document.getElementById(`price-ot`).innerHTML = prezzoTot;
+document.getElementById(`price-tot`).innerHTML = prezzoTot;
 
