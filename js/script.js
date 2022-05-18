@@ -48,3 +48,7 @@ if (età > secondAge){
     console.log(`Il prezzo totale è di ${prezzoTot}€`)
 }
 
+document.getElementById(`user-age`).innerHTML = età;
+document.getElementById(`kmt-dist`).innerHTML = distanzaTot;
+document.getElementById(`price-ot`).innerHTML = prezzoTot;
+
