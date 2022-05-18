@@ -24,7 +24,6 @@ const sconto1 = ((prezzoTot / 100) * 20);
 //sconto del 40%
 const sconto2 = ((prezzoTot / 100) * 40);
 
-/* console.log(prezzoTot); // inserito momentaneamente */
 
 //la prima condizione è:
 //Il passeggero che ha MENO di 18 anni ha lo sconto sul prezzo totale del 20%.
