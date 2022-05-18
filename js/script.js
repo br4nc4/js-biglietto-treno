@@ -6,18 +6,19 @@ const distanza = prompt(`Quanti kilometri percorrerai?`);
 //il prezzo del biglietto è di 0.21€ al Km. 
 const prezzoKm = 0.21;
 
-
 //Per calcolare il prezzo del biglietto si moltiplica
 //il prezzo al Km per il totale dei Km percorsi.
 let prezzoTot = prezzoKm * distanza;
-
-//sconto del 20%
-let sconto1 = (prezzoTot / 100) * 20; 
 
 //età limite 18
 const firstAge = 18;
 //età limite 65
 const secondAge = 65;
+
+//sconto del 20%
+//si ottiene dividendo per 100 il prezzo totale del biglietto
+//e moltiplicando per 20 
+const sconto1 = ((prezzoTot / 100) * 20); 
 
 /* console.log(prezzoTot); // inserito momentaneamente */
 
