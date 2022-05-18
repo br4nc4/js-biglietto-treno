@@ -1,6 +1,7 @@
+"use strict"
 const età = prompt("Quanti anni hai?");
-const kmt = prompt("Quanti kilometri percorrerai?");
+const distanza = prompt("Quanti kilometri percorrerai?");
 const prezzoKm = 0.21;
-let prezzoTot;
-const sale1
-const sale2 
+const prezzoTot = prezzoKm * distanza;
+
+console.log(prezzoTot); // inserito momentaneamente
