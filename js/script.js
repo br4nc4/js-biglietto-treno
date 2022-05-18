@@ -31,12 +31,12 @@ if (età < firstAge){
     prezzoTot = prezzoTot - sconto1;
     //console.log mi serve per visualizzare la corretteza delle condizioni
     console.log(`Hai un età inferiore a ${firstAge} anni ti è stato applicato uno sconto del 20% al prezzo totale`)
-    console.log(`Il prezzo totale è di${prezzoTot}€`)
+    console.log(`Il prezzo totale è di ${prezzoTot.toFixed(2)}€`)
 }
 else if (età >= firstAge && età <= secondAge){
     prezzoTot = prezzoKm * distanzaTot;
     //console.log mi serve per visualizzare la corretteza delle condizioni
-    console.log(`Il prezzo totale è di ${prezzoTot}€`)
+    console.log(`Il prezzo totale è di ${prezzoTot.toFixed(2)}€`)
 } 
 
 //la seconda condizione è:
@@ -45,10 +45,10 @@ if (età > secondAge){
     prezzoTot = prezzoTot - sconto2;
     //console.log mi serve per visualizzare la corretteza delle condizioni
     console.log(`Hai un età maggiore di ${secondAge}anni ti è stato applicato uno sconto del 40% al prezzo totale`)
-    console.log(`Il prezzo totale è di ${prezzoTot}€`)
+    console.log(`Il prezzo totale è di ${prezzoTot.toFixed(2)}€`)
 }
 
 document.getElementById(`user-age`).innerHTML =  `Hai un'età di` + ` ` + età + ` ` + `anni`;
 document.getElementById(`kmt-dist`).innerHTML = `Percorrerai` + ` ` + distanzaTot + ` ` + `Km`;
-document.getElementById(`price-tot`).innerHTML = `Il prezzo totale del tuo biglietto è di`+ ` ` + prezzoTot + `€`;
+document.getElementById(`price-tot`).innerHTML = `Il prezzo totale del tuo biglietto è di`+ ` ` + prezzoTot.toFixed(2) + `€`;
 
