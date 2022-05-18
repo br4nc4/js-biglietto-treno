@@ -30,11 +30,13 @@ const sconto2 = ((prezzoTot / 100) * 40);
 //Il passeggero che ha MENO di 18 anni ha lo sconto sul prezzo totale del 20%.
 if (età < firstAge){
     prezzoTot = prezzoTot - sconto1;
+    //console.log mi serve per visualizzare la corretteza delle condizioni
     console.log(`Hai un età inferiore a ${firstAge} anni ti è stato applicato uno sconto del 20% al prezzo totale`)
     console.log(`Il prezzo totale è di${prezzoTot}€`)
 }
 else if (età >= firstAge && età <= secondAge){
     prezzoTot = prezzoKm * distanzaTot;
+    //console.log mi serve per visualizzare la corretteza delle condizioni
     console.log(`Il prezzo totale è di ${prezzoTot}€`)
 } 
 
@@ -42,6 +44,7 @@ else if (età >= firstAge && età <= secondAge){
 //il passeggero che ha PIù di 65 anni ha uno sconto sul prezzo totale del 40%.
 if (età > secondAge){
     prezzoTot = prezzoTot - sconto2;
+    //console.log mi serve per visualizzare la corretteza delle condizioni
     console.log(`Hai un età maggiore di ${secondAge}anni ti è stato applicato uno sconto del 40% al prezzo totale`)
     console.log(`Il prezzo totale è di ${prezzoTot}€`)
 }
