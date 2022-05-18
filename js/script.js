@@ -48,7 +48,7 @@ if (età > secondAge){
     console.log(`Il prezzo totale è di ${prezzoTot}€`)
 }
 
-document.getElementById(`user-age`).innerHTML = età + `anni`;
-document.getElementById(`kmt-dist`).innerHTML = distanzaTot + `Km`;
-document.getElementById(`price-tot`).innerHTML = prezzoTot + `€`;
+document.getElementById(`user-age`).innerHTML =  `Hai un'età di` + età + `anni`;
+document.getElementById(`kmt-dist`).innerHTML = `Percorrerai` + distanzaTot + `Km`;
+document.getElementById(`price-tot`).innerHTML = `Il prezzo totale del tuo biglietto è di` + prezzoTot + `€`;
 
